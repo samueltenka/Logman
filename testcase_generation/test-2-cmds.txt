@@ -1,0 +1,20 @@
+c jov
+t 00:00:00:40:00|00:00:00:99:99
+t 84:14:00:00:00|84:14:00:99:99
+k eja pms
+s
+k dod duh
+r
+r
+c msq
+k mbu gmi
+c pkk
+k esf eax
+t 00:00:74:00:00|00:00:74:99:99
+k uzd lcm
+d 18
+c xid
+g
+k zqy pqd
+g
+q

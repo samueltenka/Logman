@@ -1,0 +1,20 @@
+t 00:20:00:00:07|00:20:00:99:99
+k vcf oqa
+t 04:00:90:00:00|04:00:90:99:99
+k fag qpw
+r
+k pyz vue
+t 00:00:00:00:40|00:00:00:99:99
+d 9
+s
+r
+k alz ifj
+a 22
+c plv
+k ztu uqk
+k omm svd
+k ceh ndn
+k ols ixp
+p
+g
+q

@@ -1,0 +1,20 @@
+a 13
+t 00:00:00:80:00|00:00:00:99:99
+p
+t 07:00:00:80:00|07:00:00:99:99
+d 13
+g
+k tsu iik
+c fam
+g
+k hxo uvn
+c qpz
+s
+p
+k qja oan
+c qot
+k hmi gkm
+p
+g
+g
+q

@@ -1,0 +1,20 @@
+k box qje
+c mjy
+p
+e 26
+k ric lvf
+c zch
+g
+k yvs rlz
+t 00:00:03:00:00|00:00:03:99:99
+p
+g
+c kag
+k elz htl
+t 00:10:00:03:00|00:10:00:99:99
+c jqh
+t 00:00:99:30:70|00:00:99:99:99
+e 26
+a 21
+g
+q
