@@ -5,10 +5,12 @@ encrypt: Main.cpp GetParams.h Debug.h
 #commit:
 #	git commit -m "unhelpful message..."
 #	git push origin master < credentials
-logman: Main.o
-	g++ Main.o -o logman
-Main.o: Main.cpp GetParams.h Debug.h
+logman: Main.o LogReader.o
+	g++ Main.o LogReader.o -o logman
+Main.o: Main.cpp GetParams.h Debug.h Log.h
 	g++ $(CPPFLAGS) Main.cpp -o Main.o
+LogReader.o: LogReader.cpp Log.h Debug.h
+	g++ $(CPPFLAGS) LogReader.cpp -o LogReader.o
 
 clean:
 	rm -rf RZG.o Main.o logman

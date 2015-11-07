@@ -1,3 +1,5 @@
 Main.cpp
 GetParams.h
 Debug.h
+LogReader.cpp
+Log.h
