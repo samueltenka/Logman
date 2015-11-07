@@ -2,6 +2,7 @@ CPPFLAGS = -c -std=c++11 -Wall -Wextra -Wvla -pedantic -g3 -O3
 encrypt: Main.cpp GetParams.h Debug.h
 	python encrypt.py < key
 	python decrypt.py < key
+	git add *.enc
 #commit:
 #	git commit -m "unhelpful message..."
 #	git push origin master < credentials
