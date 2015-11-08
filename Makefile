@@ -6,8 +6,8 @@ encrypt: Main.cpp GetParams.h Debug.h
 #commit:
 #	git commit -m "unhelpful message..."
 #	git push origin master < credentials
-logman: Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o
-	g++ Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o -o logman
+logman: Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o TimeToNum.o
+	g++ Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o TimeToNum.o -o logman
 Main.o: Main.cpp GetParams.h Log.h Debug.h 
 	g++ $(CPPFLAGS) Main.cpp -o Main.o
 LogReader.o: LogReader.cpp Log.h Debug.h
@@ -20,6 +20,9 @@ IndexSearch.o: IndexSearch.cpp Index.h Debug.h
 	g++ $(CPPFLAGS) IndexSearch.cpp -o IndexSearch.o
 CommandReader.o: CommandReader.cpp Command.h Debug.h
 	g++ $(CPPFLAGS) CommandReader.cpp -o CommandReader.o
+TimeToNum.o: TimeToNum.cpp Debug.h
+	g++ $(CPPFLAGS) TimeToNum.cpp -o TimeToNum.o
+
 
 clean:
-	rm -rf Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o logman
+	rm -rf Main.o LogReader.o LogPrinter.o IndexSearch.o Index.o CommandReader.o TimeToNum.o logman

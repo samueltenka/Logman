@@ -9,3 +9,4 @@ IndexSearch.cpp
 LogPrinter.cpp
 Command.h
 CommandReader.cpp
+TimeToNum.cpp
