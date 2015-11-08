@@ -1,0 +1,14 @@
+#ifndef GET_PARAMS_H
+#define GET_PARAMS_H
+
+#include "Debug.h"
+
+void get_params(char** argv,std::string &filename) {
+   if(strcmp(argv[1],"-h")==0 ||
+      strcmp(argv[1],"--help")==0) {
+      std::cout << "Help Message!\n";
+   }
+   filename = argv[1];
+}
+
+#endif//GET_PARAMS_H

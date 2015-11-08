@@ -1,0 +1,21 @@
+#include "Debug.h"
+#include "GetParams.h"
+#include "Log.h"
+#include "Index.h"
+#include "Command.h"
+
+int main(int argc, char** argv) {
+   ASSRT(argc==2, "need 2 arguments");
+   std::string filename;
+   get_params(argv, filename);
+   
+   Log master;
+   master.read_from(filename);
+   master.print();
+
+   Index myindex(master);
+   std::vector<std::string> keywords = {"hey", "2"};
+   std::vector<int> indices;
+   myindex.search_message(keywords, indices);
+   master.print(indices);
+}

@@ -1,0 +1,18 @@
+#ifndef DEBUG_H
+#define DEBUG_H
+
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <string.h>
+
+#define DEBUG 1
+#if DEBUG
+   #define YELL(MSSG) {std::cout << MSSG; std::cout.flush();}
+   #define ASSRT(CONDITION, MSSG) if(!(CONDITION)) {YELL(MSSG); exit(-1);}
+#else 
+   #define YELL(MSSG)
+   #define ASSRT(CONDITION, MSSG)
+#endif
+
+#endif//DEBUG_H

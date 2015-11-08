@@ -1,0 +1,15 @@
+#ifndef COMMAND_H
+#define COMMAND_H
+
+#include "Debug.h"
+#include <vector>
+
+struct Command {
+   char cmd;
+   std::vector<std::string> arguments;
+   Command(char c, std::vector<std::string> args): cmd(c), arguments(args) {}
+};
+
+void read_from(std::string filename, std::vector<Command> &commands);
+
+#endif//COMMAND_H

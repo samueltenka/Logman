@@ -3,3 +3,9 @@ GetParams.h
 Debug.h
 LogReader.cpp
 Log.h
+Index.cpp
+Index.h
+IndexSearch.cpp
+LogPrinter.cpp
+Command.h
+CommandReader.cpp

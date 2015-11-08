@@ -1,0 +1,23 @@
+#include "Command.h"
+#include <fstream>
+#include <sstream>
+
+void read_from(std::string filename, std::vector<Command> &commands) {
+   std::ifstream myfile(filename);
+
+   std::string line;
+   while(true) {
+      getline(myfile,line);
+      if(myfile.eof()) {break;}
+      std::stringstream ss; ss << line;
+      std::string word;
+      ss >> word;
+      ASSRT(word.size()==1, "commands must be single characters, then space, then arguments");
+      char cmd = word[0];
+      std::vector<std::string> arguments;
+      commands.emplace(commands.end(), cmd, arguments);
+      while(ss >> word) {
+         commands.back().arguments.push_back(word);
+      }
+   }
+}

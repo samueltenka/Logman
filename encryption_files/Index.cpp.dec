@@ -1,0 +1,20 @@
+#include "Index.h"
+#include <sstream>
+
+Index::Index(Log const &log) {
+   for(unsigned int i=0; i<log.entries.size(); ++i) {
+      std::string message = log.entries[i].message;
+      std::stringstream ss; ss << message;
+      std::string word;
+      YELL("#@#@#\n");
+      while(ss >> word) {
+         if(!mentions[word].empty() && mentions[word].back()==i){continue;}
+         mentions[word].push_back(i);
+         YELL(word);
+         for(auto j: mentions[word]) {
+            YELL(j<<"---");
+         }YELL("@@\n");
+         ++(counts[word]);
+      }
+   }
+}
