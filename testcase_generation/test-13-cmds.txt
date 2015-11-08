@@ -1,20 +1,20 @@
-k mus xrd
-d 15
-t 50:00:00:00:00|50:00:00:99:99
+t 00:40:00:00:00|00:40:00:99:99
+k Di Gk
+k HC Dr
+k uG NN
+d 14
 r
-t 40:00:00:20:00|40:00:00:99:99
+k sm LB
+g
+t 00:00:00:00:00|00:00:00:99:99
 p
-k lhs tvv
-e 2
-k ppk wvr
-r
-c wlp
+k Al Qj
+k yI KN
+a 20
+a 16
+k Mh aO
+c bD
+t 10:05:00:00:00|10:05:00:99:99
 l
-k ayy ktn
-k yrg hjn
-r
-r
-p
-k pdv bgi
 g
 q

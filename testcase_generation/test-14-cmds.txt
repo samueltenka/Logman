@@ -1,20 +1,20 @@
-c qoh
-c qwd
+k QI dl
 r
-t 00:00:00:82:00|00:00:00:99:99
+c mE
+d 26
+c sN
+k al aS
+d 23
+k dh zU
 r
+c oA
+g
+c qM
 s
-e 12
-c ykn
-c fuz
-t 00:03:05:00:70|00:03:05:99:99
-d 7
-c ryn
-c ppz
-t 02:00:60:85:00|02:00:60:99:99
-k lbu amo
-r
-k rcy ucq
+c Nh
+c pH
 s
+k VK bo
+d 5
 g
 q

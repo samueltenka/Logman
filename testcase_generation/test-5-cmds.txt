@@ -1,20 +1,20 @@
-c cln
-k giu tzm
-c dzg
-t 00:00:77:00:90|00:00:77:99:99
+e 13
+r
+c dx
 r
 r
-k kiz szz
-c syf
-d 14
-d 23
+g
+a 18
+k Mm rI
 r
-c maq
-t 00:80:00:00:00|00:80:00:99:99
 r
-c oam
-t 90:00:80:00:00|90:00:80:99:99
-k duz npm
-e 24
+t 60:00:00:08:40|60:00:00:99:99
+t 40:00:45:00:50|40:00:45:99:99
+k zE Dr
+k AI NI
+c zv
+k zq zK
+c SF
+k fd ef
 g
 q

@@ -1,20 +1,20 @@
+c cO
+c rQ
+t 00:00:50:30:50|00:00:50:99:99
+k mO fQ
+c ke
+k gS sf
+t 00:10:00:00:00|00:10:00:99:99
+p
+t 02:30:00:08:70|02:30:00:99:99
+a 13
+s
 r
-l
-d 2
-r
-t 00:00:00:05:00|00:00:00:99:99
-d 15
-t 40:00:00:00:60|40:00:00:99:99
-c rtu
-c syp
-k bha ikb
-a 2
-k bpa bni
-t 00:00:80:03:00|00:00:80:99:99
-r
-c pin
-k gqg usn
-c and
-c juj
+k HE Pj
+c ei
+d 17
+c PH
+k by yx
+k pc aD
 g
 q

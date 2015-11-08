@@ -1,20 +1,20 @@
-c rdy
-c tas
-a 12
-k kgr frz
-d 1
-t 60:00:00:00:08|60:00:00:99:99
-k oxv ohf
-a 23
-c tnq
-k lyq osj
-c nui
-k zem wac
-k dvl hbr
-k zxc nqx
-c nue
-d 28
-k vwq nye
-t 00:06:00:00:00|00:06:00:99:99
+d 3
+r
+t 00:00:70:00:07|00:00:70:99:99
+a 28
+c Iq
+s
+e 5
+d 13
+k Iu mF
+d 26
+t 00:00:04:00:50|00:00:04:99:99
+c op
+p
+t 00:00:00:00:00|00:00:00:99:99
+d 8
+e 15
+k Kj Fk
+s
 g
 q
