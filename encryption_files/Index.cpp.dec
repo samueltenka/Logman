@@ -6,14 +6,14 @@ Index::Index(Log const &log) {
       std::string message = log.entries[i].message;
       std::stringstream ss; ss << message;
       std::string word;
-      YELL("#@#@#\n");
+      YELLF(INIT, "#@#@#\n");
       while(ss >> word) {
          if(!mentions[word].empty() && mentions[word].back()==i){continue;}
          mentions[word].push_back(i);
-         YELL(word);
+         YELLF(INIT, word);
          for(auto j: mentions[word]) {
-            YELL(j<<"---");
-         }YELL("@@\n");
+            YELLF(INIT, j<<"---");
+         }YELLF(INIT, "@@\n");
          ++(counts[word]);
       }
    }

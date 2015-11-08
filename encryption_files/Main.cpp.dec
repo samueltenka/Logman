@@ -14,8 +14,17 @@ int main(int argc, char** argv) {
    master.print();
 
    Index myindex(master);
-   std::vector<std::string> keywords = {"hey", "2"};
-   std::vector<int> indices;
-   myindex.search_message(keywords, indices);
-   master.print(indices);
+
+   while(true) {
+      Command cmd;
+      get_command(cmd);
+      switch(cmd.cmd) {
+      case 'q': return 0;
+      case 'k':
+         std::vector<int> indices;
+         myindex.search_message(cmd.arguments, indices);
+         master.print(indices);
+         break;
+      }
+   }
 }

@@ -1,20 +1,20 @@
+s
 e 7
-r
-d 13
-r
-r
-c nyy
-k ynq nyz
+k bre zhb
+k mbi rat
 r
 s
-r
-t 80:00:00:00:80|80:00:00:99:99
-c aih
-a 28
-c ndj
-k nkf wte
+t 00:00:00:09:00|00:00:00:99:99
+k qgc jln
+c neu
 r
 g
-k uur rxr
+r
+g
+r
+p
+k dom uhp
+d 23
+t 00:00:00:00:00|00:00:00:99:99
 g
 q

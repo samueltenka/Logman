@@ -1,20 +1,20 @@
-k qoy tbt
-k xwi ewx
-r
-k kpj trg
-t 00:00:00:00:00|00:00:00:99:99
-p
-t 02:49:00:00:00|02:49:00:99:99
-g
-k ktr lbx
-p
-k hqu xlg
-k nsj aow
-g
-r
-e 17
-t 00:00:08:00:04|00:00:08:99:99
-g
+c rdy
+c tas
 a 12
+k kgr frz
+d 1
+t 60:00:00:00:08|60:00:00:99:99
+k oxv ohf
+a 23
+c tnq
+k lyq osj
+c nui
+k zem wac
+k dvl hbr
+k zxc nqx
+c nue
+d 28
+k vwq nye
+t 00:06:00:00:00|00:06:00:99:99
 g
 q

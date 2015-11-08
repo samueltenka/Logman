@@ -1,20 +1,20 @@
-t 00:08:00:04:00|00:08:00:99:99
-s
-k lfu glw
-c mvj
-k eki rhh
-c qob
-d 10
-c sim
-p
-k zzw lsr
-c eax
-t 00:66:60:00:00|00:66:60:99:99
+r
+d 15
+t 07:80:02:00:09|07:80:02:99:99
+d 12
+k vtp tng
+d 24
 l
-c vww
-c jqw
 s
-k lsn vnt
-l
+a 28
+k nms zca
+r
+t 00:00:10:00:00|00:00:10:99:99
+k nbl vwa
+t 70:00:00:00:00|70:00:00:99:99
+t 00:70:00:01:00|00:70:00:99:99
+g
+c rdx
+k lms pif
 g
 q

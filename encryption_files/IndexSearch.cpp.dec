@@ -1,15 +1,25 @@
 #include "Index.h"
 #include <algorithm>
 
+inline void YELLVEC(const std::vector<int> &v) {
+   for(auto j: v) {
+         YELLF(SEARCH, j<<"---");
+   }YELLF(SEARCH, "\n");
+}
+
 int intersect(std::vector<int> &a, const std::vector<int> &b) {
+   YELLF(SEARCH,"#a=");YELLVEC(a); YELLF(SEARCH,"#b="); YELLVEC(b);
+
    if(a.empty() || b.empty()) {return 0;}
    unsigned int i=0,j=0,k=0;
    while(true) {
-      if(b[j]<a[k]) {++j; if(j>=b.size()) {return i;}}
-      if(a[k]<b[j]) {++k; if(k>=a.size()) {return i;}}
+      if(b[j]<a[k]) {++j; if(j>=b.size()) {YELLF(SEARCH, "#0i="<<i<<"\n"); return i;}}
+      if(a[k]<b[j]) {++k; if(k>=a.size()) {YELLF(SEARCH, "#1i="<<i<<"\n"); return i;}}
       //now a[k]==b[j]
-      a[i++]=a[k++];
-      if(k>=a.size()) {return i;}
+      a[i++]=a[k++]; YELLF(SEARCH, "#i="<<i<<"#k="<<k<<"\n");
+      ++k; ++j;
+      if(k>=a.size()) {YELLF(SEARCH, "#2i="<<i<<"\n"); return i;}
+      if(j>=b.size()) {YELLF(SEARCH, "#3i="<<i<<"\n"); return i;}
    }
 }
 
@@ -30,13 +40,9 @@ void Index::search_message(std::vector<std::string> keywords,
    CountComp CC(*this);
    std::sort(keywords.begin(), keywords.end(), CC); // consider least frequent words first
    matches = mentions[keywords[0]];
-   for(auto j: matches) {
-         YELL(j<<"---");
-   }YELL("\n");
+   YELLVEC(matches);
    for(unsigned int i=1; i<keywords.size(); ++i) {
-      for(auto j: mentions[keywords[i]]) {
-         YELL(j<<"---");
-      }YELL("\n");
+      YELLVEC(mentions[keywords[i]]);
       int newsize = intersect(matches, mentions[keywords[i]]);
       matches.resize(newsize);
    }

@@ -11,7 +11,7 @@ def gen_timestamp():
    return ':'.join(choice(digits)+choice(digits) for i in range(len_timestamps))
 def gen_line():
    return gen_timestamp()+'|'+gen_word()+'|'+\
-          choice(' ,./<>?;\':"[]\\{}|`-=~!@#$%^&*()_+').join(gen_word() for i in range(len_line))
+          choice(' ,./<>?;\':"[]\\{}`-=~!@#$%^&*()_+').join(gen_word() for i in range(len_line))
 def gen_log():
    return '\n'.join(gen_line() for i in range(num_lines))
 

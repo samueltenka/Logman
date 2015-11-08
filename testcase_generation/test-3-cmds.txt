@@ -1,20 +1,20 @@
-t 00:20:00:00:07|00:20:00:99:99
-k vcf oqa
-t 04:00:90:00:00|04:00:90:99:99
-k fag qpw
 r
-k pyz vue
-t 00:00:00:00:40|00:00:00:99:99
-d 9
-s
+l
+d 2
 r
-k alz ifj
-a 22
-c plv
-k ztu uqk
-k omm svd
-k ceh ndn
-k ols ixp
-p
+t 00:00:00:05:00|00:00:00:99:99
+d 15
+t 40:00:00:00:60|40:00:00:99:99
+c rtu
+c syp
+k bha ikb
+a 2
+k bpa bni
+t 00:00:80:03:00|00:00:80:99:99
+r
+c pin
+k gqg usn
+c and
+c juj
 g
 q
