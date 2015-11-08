@@ -1,9 +1,10 @@
 from random import choice
 num_lines = 20
-len_line = 1000
-len_word = 3
+len_line = 2000
+len_word = 2
 len_timestamps = 5
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
+alphabet += 'ABCDEFGHIKLMNOPQRSTUV'
 digits = '0'*30 + '0123456789' #to bias numbers to 0, encouraging ties
 def gen_word():
    return ''.join(choice(alphabet) for i in range(len_word))
@@ -28,7 +29,7 @@ def gen_com():
       return letter+' '+' '.join(gen_word() for i in range(len_com))
    elif letter in 't':
       s = gen_timestamp()
-      t = s[:8] + ':99:99'
+      t = s[:8] + ':99:99' #later time
       return 't '+s+'|'+t
    print('ERROR!')
 def gen_cmnds():
