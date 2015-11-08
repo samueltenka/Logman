@@ -1,0 +1,32 @@
+#ifndef DEBUG_H
+#define DEBUG_H
+
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <string.h>
+
+#define DEBUG 1
+
+#define INIT 0
+#define IO 0
+#define SEARCH 1
+
+#if DEBUG
+   #define YELL(MSSG) {std::cout << MSSG; std::cout.flush();}
+   #define ASSRT(CONDITION, MSSG) if(!(CONDITION)) {YELL(MSSG); exit(-1);}
+   #define YELLF(FLAG, MSSG) if(FLAG){YELL(MSSG)}
+   #define ASSRTF(FLAG, CONDITION, MSSG) if(FLAG){ASSRT(CONDITION, MSSG)}
+#else 
+   #define YELL(MSSG)
+   #define ASSRT(CONDITION, MSSG)
+   #define YELLF(FLAG, MSSG) 
+   #define ASSRTF(FLAG, CONDITION, MSSG) 
+#endif
+
+#define YELLVEC(FLAG, VEC) {\
+   for(auto EL: VEC) {\
+         YELLF(FLAG, EL<<"---");\
+   }YELLF(FLAG, "\n");}
+
+#endif//DEBUG_H

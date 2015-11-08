@@ -1,0 +1,14 @@
+#include "Log.h"
+#include <fstream>
+
+void Log::read_from(std::string filename) {
+   std::ifstream myfile(filename);
+
+   std::string timestamp, category, message,_;
+   while(true) {
+      getline(myfile,timestamp,'|');getline(myfile,category,'|');getline(myfile,message);
+      if(myfile.eof()) {break;}
+      entries.emplace(entries.end(), timestamp,category,message);
+   }
+}
+

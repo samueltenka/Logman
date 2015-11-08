@@ -1,0 +1,22 @@
+#include "Command.h"
+#include <sstream>
+
+void get_command(Command &cmd) {
+   std::cout << "% ";
+   
+   std::string args, a;
+   getline(std::cin, args, '\n');
+   std::stringstream ss; ss<<args;
+
+   ss>>a;
+   ASSRT(a.size()==1, "commands must be single characters, then space, then arguments");
+   cmd.cmd = a[0];
+
+   while(ss >> a) {
+      cmd.arguments.push_back(a);
+   }
+
+}
+
+
+
