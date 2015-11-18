@@ -11,7 +11,14 @@ Command.h
 CommandReader.cpp
 TimeToNum.cpp
 ExcerptList.h
+ExcerptListComparator.h
 Lexer.h
+VectorIntersect.h
+SearchResults.h
+CountComp.h
+TimeComparator.h
+TypeNames.h
+
 
                   testcase_generation/test-13-cmds.txt  testcase_generation/test-2-cmds.txt  testcase_generation/test-6-log.txt
                   testcase_generation/test-13-log.txt   testcase_generation/test-2-log.txt   testcase_generation/test-7-cmds.txt
